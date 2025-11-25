@@ -1,4 +1,7 @@
-﻿namespace primeiroprogramati48
+﻿using System;
+using Microsoft.Win32;
+
+namespace primeiroprogramati48
 {
     partial class Form1
     {
@@ -28,39 +31,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNum = new System.Windows.Forms.TextBox();
+            this.txtResul = new System.Windows.Forms.TextBox();
             this.Titulo = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.Mais = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Sete = new System.Windows.Forms.Button();
+            this.Oito = new System.Windows.Forms.Button();
+            this.Nove = new System.Windows.Forms.Button();
+            this.Quatro = new System.Windows.Forms.Button();
+            this.Seis = new System.Windows.Forms.Button();
+            this.Um = new System.Windows.Forms.Button();
+            this.Dois = new System.Windows.Forms.Button();
+            this.Tres = new System.Windows.Forms.Button();
+            this.Zero = new System.Windows.Forms.Button();
+            this.Virgula = new System.Windows.Forms.Button();
+            this.Igual = new System.Windows.Forms.Button();
+            this.Adicao = new System.Windows.Forms.Button();
+            this.Subtracao = new System.Windows.Forms.Button();
+            this.Multiplicacao = new System.Windows.Forms.Button();
+            this.Divisao = new System.Windows.Forms.Button();
+            this.Limpa = new System.Windows.Forms.Button();
+            this.Ccinco = new System.Windows.Forms.Button();
+            this.Menos = new System.Windows.Forms.Button();
+            this.Porcentagem = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtNum
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBox1.Location = new System.Drawing.Point(78, 170);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtNum.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtNum.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.txtNum.Location = new System.Drawing.Point(48, 112);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(237, 20);
+            this.txtNum.TabIndex = 1;
             // 
-            // textBox2
+            // txtResul
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox2.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBox2.Location = new System.Drawing.Point(330, 170);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtResul.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtResul.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.txtResul.Location = new System.Drawing.Point(48, 147);
+            this.txtResul.Name = "txtResul";
+            this.txtResul.Size = new System.Drawing.Size(237, 20);
+            this.txtResul.TabIndex = 2;
             // 
             // Titulo
             // 
             this.Titulo.Font = new System.Drawing.Font("ISOCPEUR", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo.Location = new System.Drawing.Point(143, 42);
+            this.Titulo.Location = new System.Drawing.Point(38, 9);
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(250, 100);
             this.Titulo.TabIndex = 3;
@@ -68,95 +85,316 @@
             this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Titulo.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox3
+            // Sete
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox3.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBox3.Location = new System.Drawing.Point(78, 243);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(395, 20);
-            this.textBox3.TabIndex = 4;
+            this.Sete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sete.ForeColor = System.Drawing.Color.Black;
+            this.Sete.Location = new System.Drawing.Point(42, 185);
+            this.Sete.Name = "Sete";
+            this.Sete.Size = new System.Drawing.Size(56, 48);
+            this.Sete.TabIndex = 4;
+            this.Sete.Text = "7";
+            this.Sete.UseVisualStyleBackColor = true;
+            this.Sete.Click += new System.EventHandler(this.Sete_Click);
             // 
-            // Mais
+            // Oito
             // 
-            this.Mais.BackColor = System.Drawing.SystemColors.Menu;
-            this.Mais.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mais.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.Mais.Location = new System.Drawing.Point(78, 308);
-            this.Mais.Name = "Mais";
-            this.Mais.Size = new System.Drawing.Size(51, 47);
-            this.Mais.TabIndex = 5;
-            this.Mais.Text = "+";
-            this.Mais.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Oito.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Oito.ForeColor = System.Drawing.Color.Black;
+            this.Oito.Location = new System.Drawing.Point(104, 185);
+            this.Oito.Name = "Oito";
+            this.Oito.Size = new System.Drawing.Size(56, 48);
+            this.Oito.TabIndex = 5;
+            this.Oito.Text = "8";
+            this.Oito.UseVisualStyleBackColor = true;
+            this.Oito.Click += new System.EventHandler(this.Oito_Click);
             // 
-            // textBox4
+            // Nove
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBox4.Location = new System.Drawing.Point(181, 308);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(51, 47);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.Text = "-";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Nove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nove.ForeColor = System.Drawing.Color.Black;
+            this.Nove.Location = new System.Drawing.Point(167, 185);
+            this.Nove.Name = "Nove";
+            this.Nove.Size = new System.Drawing.Size(56, 48);
+            this.Nove.TabIndex = 6;
+            this.Nove.Text = "9";
+            this.Nove.UseVisualStyleBackColor = true;
+            this.Nove.Click += new System.EventHandler(this.Nove_Click);
             // 
-            // textBox5
+            // Quatro
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBox5.Location = new System.Drawing.Point(290, 308);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(51, 47);
-            this.textBox5.TabIndex = 7;
-            this.textBox5.Text = "X";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Quatro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quatro.ForeColor = System.Drawing.Color.Black;
+            this.Quatro.Location = new System.Drawing.Point(42, 239);
+            this.Quatro.Name = "Quatro";
+            this.Quatro.Size = new System.Drawing.Size(56, 48);
+            this.Quatro.TabIndex = 8;
+            this.Quatro.Text = "4";
+            this.Quatro.UseVisualStyleBackColor = true;
+            this.Quatro.Click += new System.EventHandler(this.Quatro_Click);
             // 
-            // textBox6
+            // Seis
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textBox6.Location = new System.Drawing.Point(401, 308);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(51, 47);
-            this.textBox6.TabIndex = 8;
-            this.textBox6.Text = "/";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Seis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Seis.ForeColor = System.Drawing.Color.Black;
+            this.Seis.Location = new System.Drawing.Point(167, 239);
+            this.Seis.Name = "Seis";
+            this.Seis.Size = new System.Drawing.Size(56, 48);
+            this.Seis.TabIndex = 9;
+            this.Seis.Text = "6";
+            this.Seis.UseVisualStyleBackColor = true;
+            this.Seis.Click += new System.EventHandler(this.Seis_Click);
+            // 
+            // Um
+            // 
+            this.Um.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Um.ForeColor = System.Drawing.Color.Black;
+            this.Um.Location = new System.Drawing.Point(42, 293);
+            this.Um.Name = "Um";
+            this.Um.Size = new System.Drawing.Size(56, 48);
+            this.Um.TabIndex = 10;
+            this.Um.Text = "1";
+            this.Um.UseVisualStyleBackColor = true;
+            this.Um.Click += new System.EventHandler(this.Um_Click);
+            // 
+            // Dois
+            // 
+            this.Dois.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dois.ForeColor = System.Drawing.Color.Black;
+            this.Dois.Location = new System.Drawing.Point(104, 293);
+            this.Dois.Name = "Dois";
+            this.Dois.Size = new System.Drawing.Size(56, 48);
+            this.Dois.TabIndex = 11;
+            this.Dois.Text = "2";
+            this.Dois.UseVisualStyleBackColor = true;
+            this.Dois.Click += new System.EventHandler(this.Dois_Click);
+            // 
+            // Tres
+            // 
+            this.Tres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tres.ForeColor = System.Drawing.Color.Black;
+            this.Tres.Location = new System.Drawing.Point(167, 293);
+            this.Tres.Name = "Tres";
+            this.Tres.Size = new System.Drawing.Size(56, 48);
+            this.Tres.TabIndex = 12;
+            this.Tres.Text = "3";
+            this.Tres.UseVisualStyleBackColor = true;
+            this.Tres.Click += new System.EventHandler(this.Tres_Click);
+            // 
+            // Zero
+            // 
+            this.Zero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Zero.ForeColor = System.Drawing.Color.Black;
+            this.Zero.Location = new System.Drawing.Point(104, 347);
+            this.Zero.Name = "Zero";
+            this.Zero.Size = new System.Drawing.Size(56, 48);
+            this.Zero.TabIndex = 13;
+            this.Zero.Text = "0";
+            this.Zero.UseVisualStyleBackColor = true;
+            this.Zero.Click += new System.EventHandler(this.Zero_Click);
+            // 
+            // Virgula
+            // 
+            this.Virgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Virgula.ForeColor = System.Drawing.Color.Black;
+            this.Virgula.Location = new System.Drawing.Point(42, 347);
+            this.Virgula.Name = "Virgula";
+            this.Virgula.Size = new System.Drawing.Size(56, 48);
+            this.Virgula.TabIndex = 14;
+            this.Virgula.Text = ",";
+            this.Virgula.UseVisualStyleBackColor = true;
+            this.Virgula.Click += new System.EventHandler(this.Virgula_Click);
+            // 
+            // Igual
+            // 
+            this.Igual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Igual.ForeColor = System.Drawing.Color.Black;
+            this.Igual.Location = new System.Drawing.Point(198, 401);
+            this.Igual.Name = "Igual";
+            this.Igual.Size = new System.Drawing.Size(56, 48);
+            this.Igual.TabIndex = 15;
+            this.Igual.Text = "=";
+            this.Igual.UseVisualStyleBackColor = true;
+            this.Igual.Click += new System.EventHandler(this.Igual_Click);
+            // 
+            // Adicao
+            // 
+            this.Adicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adicao.ForeColor = System.Drawing.Color.Black;
+            this.Adicao.Location = new System.Drawing.Point(229, 185);
+            this.Adicao.Name = "Adicao";
+            this.Adicao.Size = new System.Drawing.Size(56, 48);
+            this.Adicao.TabIndex = 16;
+            this.Adicao.Text = "+";
+            this.Adicao.UseVisualStyleBackColor = true;
+            this.Adicao.Click += new System.EventHandler(this.Adicao_Click);
+            // 
+            // Subtracao
+            // 
+            this.Subtracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subtracao.ForeColor = System.Drawing.Color.Black;
+            this.Subtracao.Location = new System.Drawing.Point(229, 239);
+            this.Subtracao.Name = "Subtracao";
+            this.Subtracao.Size = new System.Drawing.Size(56, 48);
+            this.Subtracao.TabIndex = 17;
+            this.Subtracao.Text = "-";
+            this.Subtracao.UseVisualStyleBackColor = true;
+            this.Subtracao.Click += new System.EventHandler(this.Subtracao_Click);
+            // 
+            // Multiplicacao
+            // 
+            this.Multiplicacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Multiplicacao.ForeColor = System.Drawing.Color.Black;
+            this.Multiplicacao.Location = new System.Drawing.Point(229, 293);
+            this.Multiplicacao.Name = "Multiplicacao";
+            this.Multiplicacao.Size = new System.Drawing.Size(56, 48);
+            this.Multiplicacao.TabIndex = 18;
+            this.Multiplicacao.Text = "X";
+            this.Multiplicacao.UseVisualStyleBackColor = true;
+            this.Multiplicacao.Click += new System.EventHandler(this.Multiplicacao_Click);
+            // 
+            // Divisao
+            // 
+            this.Divisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Divisao.ForeColor = System.Drawing.Color.Black;
+            this.Divisao.Location = new System.Drawing.Point(166, 347);
+            this.Divisao.Name = "Divisao";
+            this.Divisao.Size = new System.Drawing.Size(56, 48);
+            this.Divisao.TabIndex = 19;
+            this.Divisao.Text = "/";
+            this.Divisao.UseVisualStyleBackColor = true;
+            this.Divisao.Click += new System.EventHandler(this.Divisao_Click);
+            // 
+            // Limpa
+            // 
+            this.Limpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Limpa.ForeColor = System.Drawing.Color.Black;
+            this.Limpa.Location = new System.Drawing.Point(73, 401);
+            this.Limpa.Name = "Limpa";
+            this.Limpa.Size = new System.Drawing.Size(56, 48);
+            this.Limpa.TabIndex = 20;
+            this.Limpa.Text = "C";
+            this.Limpa.UseVisualStyleBackColor = true;
+            this.Limpa.Click += new System.EventHandler(this.Limpa_Click);
+            // 
+            // Ccinco
+            // 
+            this.Ccinco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ccinco.ForeColor = System.Drawing.Color.Black;
+            this.Ccinco.Location = new System.Drawing.Point(104, 239);
+            this.Ccinco.Name = "Ccinco";
+            this.Ccinco.Size = new System.Drawing.Size(56, 48);
+            this.Ccinco.TabIndex = 22;
+            this.Ccinco.Text = "5";
+            this.Ccinco.UseVisualStyleBackColor = true;
+            this.Ccinco.Click += new System.EventHandler(this.Ccinco_Click);
+            // 
+            // Menos
+            // 
+            this.Menos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menos.ForeColor = System.Drawing.Color.Black;
+            this.Menos.Location = new System.Drawing.Point(229, 347);
+            this.Menos.Name = "Menos";
+            this.Menos.Size = new System.Drawing.Size(56, 48);
+            this.Menos.TabIndex = 24;
+            this.Menos.Text = "+/-";
+            this.Menos.UseVisualStyleBackColor = true;
+            this.Menos.Click += new System.EventHandler(this.Menos_Click);
+            // 
+            // Porcentagem
+            // 
+            this.Porcentagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Porcentagem.ForeColor = System.Drawing.Color.Black;
+            this.Porcentagem.Location = new System.Drawing.Point(136, 401);
+            this.Porcentagem.Name = "Porcentagem";
+            this.Porcentagem.Size = new System.Drawing.Size(56, 48);
+            this.Porcentagem.TabIndex = 25;
+            this.Porcentagem.Text = "%";
+            this.Porcentagem.UseVisualStyleBackColor = true;
+            this.Porcentagem.Click += new System.EventHandler(this.Porcentagem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 420);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.Mais);
-            this.Controls.Add(this.textBox3);
+            this.ClientSize = new System.Drawing.Size(349, 463);
+            this.Controls.Add(this.Porcentagem);
+            this.Controls.Add(this.Menos);
+            this.Controls.Add(this.Ccinco);
+            this.Controls.Add(this.Limpa);
+            this.Controls.Add(this.Divisao);
+            this.Controls.Add(this.Multiplicacao);
+            this.Controls.Add(this.Subtracao);
+            this.Controls.Add(this.Adicao);
+            this.Controls.Add(this.Igual);
+            this.Controls.Add(this.Virgula);
+            this.Controls.Add(this.Zero);
+            this.Controls.Add(this.Tres);
+            this.Controls.Add(this.Dois);
+            this.Controls.Add(this.Um);
+            this.Controls.Add(this.Seis);
+            this.Controls.Add(this.Quatro);
+            this.Controls.Add(this.Nove);
+            this.Controls.Add(this.Oito);
+            this.Controls.Add(this.Sete);
             this.Controls.Add(this.Titulo);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtResul);
+            this.Controls.Add(this.txtNum);
             this.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
+        
+
+        decimal resultado;
+        decimal valor1;
+        decimal valor2;
+        string operacao = "adicao";
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            resultado = 0;
+            valor1 = 0;
+            valor2 = 0;
+        }
+
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNum;
+        private System.Windows.Forms.TextBox txtResul;
         private System.Windows.Forms.Label Titulo;
-        private System.Windows.Forms.TextBox textBox3;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.TextBox Mais;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button Sete;
+        private System.Windows.Forms.Button Oito;
+        private System.Windows.Forms.Button Nove;
+        private System.Windows.Forms.Button Quatro;
+        private System.Windows.Forms.Button Seis;
+        private System.Windows.Forms.Button Um;
+        private System.Windows.Forms.Button Dois;
+        private System.Windows.Forms.Button Tres;
+        private System.Windows.Forms.Button Zero;
+        private System.Windows.Forms.Button Virgula;
+        private System.Windows.Forms.Button Igual;
+        private System.Windows.Forms.Button Adicao;
+        private System.Windows.Forms.Button Subtracao;
+        private System.Windows.Forms.Button Multiplicacao;
+        private System.Windows.Forms.Button Divisao;
+        private System.Windows.Forms.Button Limpa;
+        private System.Windows.Forms.Button Ccinco;
+        private System.Windows.Forms.Button Menos;
+        private System.Windows.Forms.Button Porcentagem;
     }
 }
 
